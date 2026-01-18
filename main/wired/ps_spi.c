@@ -443,7 +443,7 @@ static void ps_cmd_rsp_hdlr(struct ps_ctrl_port *port, uint8_t id, uint8_t cmd, 
         case 0x45:
         {
             /* Always reporting DualShock2 should be fine? */
-            *rsp++ = 0x03;
+            *rsp++ = 0x53;
             *rsp++ = 0x02;
             *rsp++ = (port->pend_dev_id[id] == 0x41) ? 0x00 : 0x01;
             *rsp++ = 0x02;
