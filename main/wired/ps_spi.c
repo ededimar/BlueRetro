@@ -965,10 +965,10 @@ void ps_spi_init(uint32_t package) {
                     }
                     break;
                 case DEV_PAD_ALT:
-                    ps_ctrl_ports[i].dev_id[j] = 0x53;
-                    ps_ctrl_ports[i].dev_type[j] = DEV_PSX_FLIGHT;
+                    ps_ctrl_ports[i].dev_id[j] = 0x41;
+                    ps_ctrl_ports[i].dev_type[j] = DEV_PSX_DIGITAL;
                     if (!ps_ctrl_ports[i].root_dev_type) {
-                        ps_ctrl_ports[i].root_dev_type = DEV_PSX_FLIGHT;
+                        ps_ctrl_ports[i].root_dev_type = DEV_PSX_DIGITAL;
                         goto inner_break;
                     }
                     break;
