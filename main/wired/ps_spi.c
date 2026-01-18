@@ -957,8 +957,8 @@ void ps_spi_init(uint32_t package) {
         for (uint32_t j = 0; j < MT_PORT_MAX; j++) {
             switch (config.out_cfg[ps_ctrl_ports[i].mt_first_port + j].dev_mode) {
                 case DEV_PAD:
-                    ps_ctrl_ports[i].dev_id[j] = 0x41;
-                    ps_ctrl_ports[i].dev_type[j] = DEV_PS2_DS2;
+                    ps_ctrl_ports[i].dev_id[j] = 0x53;
+                    ps_ctrl_ports[i].dev_type[j] = DEV_PSX_FLIGHT;
                     if (!ps_ctrl_ports[i].root_dev_type) {
                         ps_ctrl_ports[i].root_dev_type = DEV_PS2_DS2;
                         goto inner_break;
